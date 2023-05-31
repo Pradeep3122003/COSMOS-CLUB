@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        /* This is start of navbar code */
+        /* includes all animation */
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav {
+            width: 100%;
+            height: calc(10vh + 10vw);
+            display: inline-block;
+            background-color: rgb(0, 0, 107);
+            align-items: center;
+            position: relative;
+        }
+
+        nav li {
+            display: inline;
+            position: relative;
+            text-align: center;
+            font-size: calc((6vh + 6vw) / 2);
+            padding: 5vh 2vw 5vh 0vw;
+            list-style-type: none;
+            color: wheat;
+        }
+
+        nav ul li img {
+            height: calc(6vw + 6vh);
+            width: calc(6vh + 6vw);
+            position: relative;
+            rotate: odeg;
+            animation: imgrotate 1s ease 1;
+        }
+
+        /* #sun {
+            height: calc(2vh + 2vw);
+            width: calc(2vh + 2vw);
+            background-image: radial-gradient(circle, white 50%, yellow 20%);
+            display: inline;
+            position: relative;
+            right: 3vw;
+            top: -15vh;
+            border-radius: 50% 50%;
+            float: right;
+        } */
+
+        @keyframes imgrotate {
+            from {
+                rotate: 0deg;
+            }
+
+            to {
+                rotate: 360deg;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        /* end of the navbar code  */
+        /* copy navbar till here  */
+
+        /* additional nav styles  */
+        @media screen and (max-width: 600px) {
+            nav ul {
+                padding: 0px 1vw 0px 0px;
+                margin-left: 0vw;
+            }
+
+            nav li {
+                font-size: calc(1.5vw + 2vh);
+                padding: 0px 0vw 0px 1vw;
+            }
+        }
+
+        /* nav style ends here  */
+
+
+        /* aut are design for cards copy this for multiple cards */
+        #aut1 {
+            position: relative;
+            height: 250px;
+            width: 300px;
+            background-image: linear-gradient(30deg, rgb(66 66 147), black);
+            border: 2px solid gold;
+            padding: 20px;
+            margin: auto;
+
+        }
+
+        div img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50% 50%;
+            margin: auto;
+        }
+
+        .imge {
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .info {
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div a img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50% 50%;
+            margin: auto;
+            padding: 5px;
+        }
+
+        #back {
+            width: 100%;
+            background-color: black;
+            display: block;
+            margin: auto;
+            padding-top: 10px;
+        }
+
+        .cont {
+
+            position: relative;
+            margin: 20% 8% 0% 8%;
+        }
+
+        .l1 {
+
+            display: block;
+            margin: auto;
+            font-weight: bold;
+            font-size: 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center;
+            border-right: 2px solid red;
+            width: 22ch;
+            animation: l1a 6s alternate-reverse infinite;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        @keyframes l1a {
+            0% {
+                width: 0ch;
+
+            }
+
+            100% {
+                width: 22ch;
+
+            }
+
+        }
+
+        .l2, .l3, .l4 {
+            width: 70vw;
+            background-color: rgb(134, 134, 228);
+            font-weight: bold;
+            margin: auto;
+            padding: 20px;
+            border-radius: 30px;
+    
+        }
+
+        .l2:hover {
+            
+            scale: 1.2;
+            background-color: rgb(16, 16, 105);
+            color: white;
+        }
+        .l3:hover {
+            background-color: rgb(16, 16, 105);
+            color: white;
+            scale: 1.2;
+        }
+        .l4:hover {
+            background-color: rgb(16, 16, 105);
+            color: white;
+            scale: 1.2;
+        }
+        .l5 {
+            display: block;
+            width: 70vw;
+            margin: auto;
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 1px 1px 5px 3px gray;
+        }
+
+        .l5:hover {
+            scale: 1.05;
+            box-shadow: 1px 1px 9px 3px rgb(37, 20, 20);
+        }
+
+        h3 {
+            display: grid;
+            text-align: center;
+            font-size: calc(3vh + 3vw);
+            color:transparent;
+            background: linear-gradient(0deg,green,red,yellow,blue);
+            -webkit-background-clip: text;
+            animation: part 6s ease infinite;
+
+        }
+        
+        @keyframes part {
+            0%{
+                background: linear-gradient(0deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+            10%{
+                background: linear-gradient(30deg,rgb(237, 65, 168),rgb(112, 134, 215),rgb(233, 161, 17),blue);
+                -webkit-background-clip: text;
+            }
+            20%{
+                background: radial-gradient(60,rgb(29, 66, 93),rgb(54, 116, 21)rgb(247, 247, 133)w,rgb(106, 106, 192));
+                -webkit-background-clip: text;
+            }
+            30%{
+                background: linear-gradient(90deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+            40%{
+                background: linear-gradient(120deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+            50%{
+                background: linear-gradient(150deg,rgb(241, 109, 111),rgb(84, 255, 4),rgb(255rgb(0, 152, 217)5, 134),blue);
+                -webkit-background-clip: text;
+            }
+            60%{
+                background: linear-gradient(180deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+            70%{
+                background: linear-gradient(210deg,rgb(87, 213, 248),rgb(255, 134, 134),rgb(250, 250, 123),rgb(98, 238, 121));
+                -webkit-background-clip: text;
+            }
+            80%{
+                background: linear-gradient(240deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+            90%{
+                background: linear-gradient(270deg,rgb(95, 45, 149),rgb(rgb(221, 53, 137)0, 50),rgb(170, 255, 95),rgb(200, 78, 78));
+                -webkit-background-clip: text;
+            }
+            95%{
+                background: linear-gradient(300deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+            100%{
+                background: linear-gradient(360deg,green,red,yellow,blue);
+                -webkit-background-clip: text;
+            }
+        }
+        .l5 a{
+            color: rgba(255, 0, 0, 0.711);
+            font-weight: bold;
+        }
+        .l5 a:hover{
+            font-size: 20px;
+        
+        }
+
+
+    </style>
+</head>
+
+<body id="b">
+
+    <nav>
+        <ul>
+            <li onclick="ani()"><img id="img" src="logo1.png" alt="F"></li>
+            <li><a href="index.html" class="con">Home</a></li>
+            <li><a href="events.html" class="con">Events</a></li>
+            <li><a href="about.html" class="con">About us</a></li>
+        </ul>
+        <!-- <div id="sun" onclick="bri()"> </div> -->
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <p class="l1">Welcome to Fun and Fun </p>
+    <h2>your ultimate destination for all things exciting and engaging!</h2> <p class="l2"> We are a
+    dynamic online platform that brings together a wide range of activities, including games, events, sports, coding
+    tests, riddles, and more, within the vibrant community of our college.</p>
+
+    <br><p class="l3"> At Fun and Fun, we believe that life is meant to be filled with laughter, joy, and memorable experiences.
+    Our mission is to create a space where students can come together, unleash their creativity, and immerse themselves
+    in a world of fun-filled opportunities. Whether you're a gaming enthusiast, a sports lover, a coding wizard, or
+    simply someone seeking thrilling challenges, we have something for everyone.</p>
+
+    <br><p class="l4"> Our team at Fun and Fun is passionate about curating a diverse array of activities that cater to different
+    interests and skill levels. We strive to foster a sense of camaraderie and healthy competition among participants,
+    encouraging them to push their boundaries, discover new talents, and form lasting connections.
+
+    What sets Fun and Fun apart is our commitment to inclusivity and openness. We firmly believe that anybody can be
+    part of this incredible journey. Whether you're a student, faculty member, or even an outsider looking to engage
+    with our community, we welcome you with open arms. </p><br>
+    <h3>Be a part of Fun and Fun!</h3> <p class="l5">We encourage everyone to share their ideas, suggestions, and talents, as we
+    firmly believe that collaboration and diversity of thought lead to the most remarkable outcomes.
+
+    Join us at Fun and Fun, and unlock a world of endless possibilities. Participate in thrilling gaming tournaments,
+    attend exciting events, test your coding skills, solve mind-boggling riddles, and so much more. Together, let's
+    create memories, forge new friendships, and make each moment a delightful adventure.
+
+    Contact us today to be part of the Fun and Fun community. We look forward to sharing laughter, excitement, and
+    unforgettable experiences with you! <br> <a href="signin.html">Join</a></p>
+
+    <br>
+    <div id="back">
+        <!-- copy this aut1 for more cards  -->
+        <div id="aut1">
+            <div class="imge"><img src="fresh1.jpg" alt=""></div>
+            <div class="info">
+                <br>
+                Pradeep K H <br>
+                V.T.U Belagavi
+            </div>
+            <div class="cont">
+                <a href="www.linkdin.com" target="_blank"><img src="linklogo.png" alt=""></a>
+                <a href="www.instagram.com" target="_google"><img src="instalogo.png" alt=""></a>
+                <a href="www.twitter.com" target="_blank"><img src="twitlogo.png" alt=""></a>
+                <a href="www.gmail.com" target="_blank"><img src="maillogo.png" alt=""></a>
+            </div>
+        </div>
+        <br>
+    </div>
+    <script>
+        ani = () => {
+            let img = document.getElementById('img');
+
+            if (img.style.scale != '1.2') {
+                img.style.scale = '1.2';
+
+            }
+            else {
+                img.style.scale = '1';
+
+            }
+        }
+
+        // bri = () => {
+        //     let sun = document.getElementById("sun");
+        //     let b = document.getElementById("b");
+
+        //     if (b.style.background != "white") {
+        //         b.style.background = "white";
+        //         sun.style.backgroundImage = "radial-gradient(circle,black 60%,white 20%)"
+        //     }
+        //     else {
+        //         b.style.background = "black";
+        //         sun.style.backgroundImage = "radial-gradient(circle,white 50%,yellow 20%)"
+        //     }
+
+        // }
+
+
+    </script>
+</body>
+
+</html>

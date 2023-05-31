@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VTU fun and activity zone">
+    <meta name="keywords" content="vtu, vtu activities, vtu btech, btech">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Game Entry</title>
+
+    <script src="front.js"></script>
+
+    <style>
+        body {
+            height: 100dvh;
+            width: 100%;
+            background-image: url("death2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100vw 100dvh;
+            padding-top: 0px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+        }
+
+        form {
+            height: auto;
+            width: 45vh;
+            border: 2px solid rgb(254, 254, 254);
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            text-align: center;
+            margin: auto;
+            color: white;
+            
+        }
+
+        .inp {
+            margin: auto;
+            padding: 15px 0px 15px 0px;
+        }
+
+        input {
+            border: none;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        input:hover {
+
+            border: 2px solid rgb(125, 45, 218);
+            color: red;
+            font-weight: bold;
+        }
+
+        #sub,
+        #res {
+            border: 2px solid red;
+        }
+
+        #sub:hover,
+        #res:hover {
+            background-color: red;
+            color: white;
+            box-shadow: none;
+            font-weight: bold;
+        }
+
+        #m:hover,
+        #f:hover {
+            box-shadow: none;
+        }
+
+        @media screen and (max-width:600px ) {
+            form{
+                font-size: calc(2vh + 2vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="https://sheetdb.io/api/v1/cvqh96ihuokyb" method="post">
+        <div class="inp">
+            <label for="name">Name:</label> <br>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="inp">
+            <label for="usn">USN:</label> <br>
+            <input type="text" name="usn" id="usn" required>
+        </div>
+        <div class="inp">
+            <label for="m">Male</label>
+            <input type="radio" name="gender" value="male" id="m">
+            <label for="f">Female</label>
+            <input type="radio" name="gender" value="female" id="f">
+        </div>
+        <div class="inp">
+            <label for="branch">Branch:</label> <br>
+            <select name="branch" id="branch" required>
+                <option value="cs" selected>Computer science</option>
+                <option value="ra">Mechanical</option>
+                <option value="e">Electronics</option>
+            </select>
+        </div>
+        <div class="inp">
+            <label for="sem">Semister:</label> <br>
+            <select name="sem" id="sem" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+        <div class="inp">
+            <label for="mob">Mobile No:</label> <br>
+            <input type="var" name="num" id="mob" minlength="10" required>
+        </div>
+        <div class="inp">
+            <label for="mail">Email ID</label> <br>
+            <input type="email" name="email" id="mail" required>
+        </div>
+        <div class="inp">
+            <input type="submit" value="submit" id="sub">
+            <input type="reset" value="Reset" id="res">
+        </div>
+    </form>
+</body>
+<!-- I typed this whole website  -->
+<!-- by pradeep  -->
+</html>

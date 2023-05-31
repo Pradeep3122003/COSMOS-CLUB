@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        div {
+            display: block;
+            align-items: center;
+        }
+
+            /* I am writing this because I may get stuck  */
+      /* This is start of navbar code */
+        /* includes all animation */
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav {
+            width: 100%;
+            height: calc(10vh + 10vw);
+            display: block;
+            background-color: rgb(0, 0, 107);
+            align-items: center;
+            position: relative;
+        }
+
+        nav li {
+            display: inline;
+            position: relative;
+            text-align: center;
+            font-size: calc((6vh + 6vw) / 2);
+            padding: 5vh 2vw 5vh 0vw;
+            list-style-type: none;
+            color: wheat;
+        }
+
+        nav ul li img {
+            height: calc(6vw + 6vh);
+            width: calc(6vh + 6vw);
+            position: relative;
+            rotate: odeg;
+            animation: imgrotate 1s ease 1;
+        }
+
+       
+
+        @keyframes imgrotate {
+            from {
+                rotate: 0deg;
+            }
+
+            to {
+                rotate: 360deg;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        /* end of the navbar code  */
+        /* copy navbar till here  */
+
+        /* additional nav styles  */
+@media screen and (max-width: 600px) {
+    nav ul {
+        padding: 2.5vh 2vw 2.5vh 2vw;
+        margin-left: 0vw;
+    }
+
+nav li {
+    font-size: calc(1.5vw + 2vh);
+    padding: 0px 0vw 0px 1vw;
+}
+}
+/* nav style ends here  */
+        .alert {
+            display: block;
+            margin:20vh auto;
+            text-align: center;
+            font-size: calc(5vh + 5vw);
+            color: white;
+            opacity: 0.2;
+        }
+      
+    </style>
+</head>
+
+<body id="b">
+    <!-- nav code starts  -->
+    <nav>
+        <ul>
+            <li onclick="ani()"><img id="img" src="logo1.png" alt="F"></li>
+            <li><a href="index.html" class="con">Home</a></li>
+            <li><a href="events.html" class="con">Events</a></li>
+            <li><a href="about.html" class="con">About us</a></li>
+          
+        </ul>
+        
+    </nav>
+    <!-- nav code ends  -->
+    
+   <div class="alert">No active events</div>
+    
+    <script>
+        // ................................................ 
+        // ................................................ 
+        // this scirpt is for navigation 
+        ani = () => {
+            let img = document.getElementById('img');
+
+            if (img.style.scale != '1.2') {
+                img.style.scale = '1.2';
+            }
+            else {
+                img.style.scale = '1';
+            }
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
