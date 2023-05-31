@@ -55,17 +55,7 @@
             animation: imgrotate 1s ease 1;
         }
 
-        #sun {
-            height: calc(2vh + 2vw);
-            width: calc(2vh + 2vw);
-            background-image: radial-gradient(circle, white 50%, yellow 20%);
-            display: inline;
-            position: relative;
-            right: 3vw;
-            top: -15vh;
-            border-radius: 50% 50%;
-            float: right;
-        }
+        
 
         @keyframes imgrotate {
             from {
@@ -150,7 +140,7 @@ nav li {
             <li><a href="about.html" class="con">About us</a></li>
           
         </ul>
-        <div id="sun" onclick="bri()"> </div>
+        
     </nav>
     <div class="fun">Fun and Fun</div>
     <script>
@@ -167,20 +157,7 @@ nav li {
             }
         }
 
-        bri = () => {
-            let sun = document.getElementById("sun");
-            let b = document.getElementById("b");
-
-            if (b.style.background != "white") {
-                b.style.background = "white";
-                sun.style.backgroundImage = "radial-gradient(circle,black 60%,white 20%)"
-            }
-            else {
-                b.style.background = "black";
-                sun.style.backgroundImage = "radial-gradient(circle,white 50%,yellow 20%)"
-            }
-
-        }
+        
 
 
     </script>
