@@ -123,7 +123,7 @@
         </div>
         <div class="inp">
             <label for="mob">Mobile No:</label> <br>
-            <input type="var" name="num" id="mob" minlength="10" required>
+            <input type="var" name="num" id="mob" minlength="10" maxlength="10" required>
         </div>
         <div class="inp">
             <label for="mail">Email ID</label> <br>
@@ -134,6 +134,17 @@
             <input type="reset" value="Reset" id="res">
         </div>
     </form>
+    <script>
+a=document.getElementById("sub");
+b=document.getElementById("mob");
+
+a.onclick=function (){
+    if (b.value > 0){
+        window.open("about.html");
+    }
+}
+    
+</script>
 </body>
 <!-- I typed this whole website  -->
 <!-- by pradeep  -->
