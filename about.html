@@ -94,57 +94,7 @@
 
 
         /* aut are design for cards copy this for multiple cards */
-        #aut1 {
-            position: relative;
-            height: 250px;
-            width: 300px;
-            background-image: linear-gradient(30deg, rgb(66 66 147), black);
-            border: 2px solid gold;
-            padding: 20px;
-            margin: auto;
 
-        }
-
-        div img {
-            height: 80px;
-            width: 80px;
-            border-radius: 50% 50%;
-            margin: auto;
-        }
-
-        .imge {
-            margin: auto;
-            display: flex;
-            align-items: center;
-        }
-
-        .info {
-            color: white;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        div a img {
-            height: 30px;
-            width: 30px;
-            border-radius: 50% 50%;
-            padding: 5px;
-        }
-
-        #back {
-            width: 100%;
-            background-color: black;
-            display: block;
-            margin: auto;
-            padding-top: 10px;
-        }
-
-        .cont {
-            display:flex;
-            position: relative;
-            margin-top:60px;
-            justify-content:center;
-        }
 
         .l1 {
 
@@ -178,32 +128,37 @@
 
         }
 
-        .l2, .l3, .l4 {
+        .l2,
+        .l3,
+        .l4 {
             width: 70vw;
             background-color: rgb(134, 134, 228);
             font-weight: bold;
             margin: auto;
             padding: 20px;
             border-radius: 30px;
-    
+
         }
 
         .l2:hover {
-            
+
             scale: 1.2;
             background-color: rgb(16, 16, 105);
             color: white;
         }
+
         .l3:hover {
             background-color: rgb(16, 16, 105);
             color: white;
             scale: 1.2;
         }
+
         .l4:hover {
             background-color: rgb(16, 16, 105);
             color: white;
             scale: 1.2;
         }
+
         .l5 {
             display: block;
             width: 70vw;
@@ -224,73 +179,96 @@
             display: grid;
             text-align: center;
             font-size: calc(3vh + 3vw);
-            color:transparent;
-            background: linear-gradient(0deg,green,red,yellow,blue);
+            color: transparent;
+            background: linear-gradient(0deg, green, red, yellow, blue);
             -webkit-background-clip: text;
             animation: part 6s ease infinite;
 
         }
-        
+
         @keyframes part {
-            0%{
-                background: linear-gradient(0deg,green,red,yellow,blue);
+            0% {
+                background: linear-gradient(0deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
-            10%{
-                background: linear-gradient(30deg,rgb(237, 65, 168),rgb(112, 134, 215),rgb(233, 161, 17),blue);
+
+            10% {
+                background: linear-gradient(30deg, rgb(237, 65, 168), rgb(112, 134, 215), rgb(233, 161, 17), blue);
                 -webkit-background-clip: text;
             }
-            20%{
-                background: radial-gradient(60,rgb(29, 66, 93),rgb(54, 116, 21)rgb(247, 247, 133)w,rgb(106, 106, 192));
+
+            20% {
+                background: radial-gradient(60, rgb(29, 66, 93), rgb(54, 116, 21)rgb(247, 247, 133)w, rgb(106, 106, 192));
                 -webkit-background-clip: text;
             }
-            30%{
-                background: linear-gradient(90deg,green,red,yellow,blue);
+
+            30% {
+                background: linear-gradient(90deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
-            40%{
-                background: linear-gradient(120deg,green,red,yellow,blue);
+
+            40% {
+                background: linear-gradient(120deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
-            50%{
-                background: linear-gradient(150deg,rgb(241, 109, 111),rgb(84, 255, 4),rgb(255rgb(0, 152, 217)5, 134),blue);
+
+            50% {
+                background: linear-gradient(150deg, rgb(241, 109, 111), rgb(84, 255, 4), rgb(255rgb(0, 152, 217)5, 134), blue);
                 -webkit-background-clip: text;
             }
-            60%{
-                background: linear-gradient(180deg,green,red,yellow,blue);
+
+            60% {
+                background: linear-gradient(180deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
-            70%{
-                background: linear-gradient(210deg,rgb(87, 213, 248),rgb(255, 134, 134),rgb(250, 250, 123),rgb(98, 238, 121));
+
+            70% {
+                background: linear-gradient(210deg, rgb(87, 213, 248), rgb(255, 134, 134), rgb(250, 250, 123), rgb(98, 238, 121));
                 -webkit-background-clip: text;
             }
-            80%{
-                background: linear-gradient(240deg,green,red,yellow,blue);
+
+            80% {
+                background: linear-gradient(240deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
-            90%{
-                background: linear-gradient(270deg,rgb(95, 45, 149),rgb(rgb(221, 53, 137)0, 50),rgb(170, 255, 95),rgb(200, 78, 78));
+
+            90% {
+                background: linear-gradient(270deg, rgb(95, 45, 149), rgb(rgb(221, 53, 137)0, 50), rgb(170, 255, 95), rgb(200, 78, 78));
                 -webkit-background-clip: text;
             }
-            95%{
-                background: linear-gradient(300deg,green,red,yellow,blue);
+
+            95% {
+                background: linear-gradient(300deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
-            100%{
-                background: linear-gradient(360deg,green,red,yellow,blue);
+
+            100% {
+                background: linear-gradient(360deg, green, red, yellow, blue);
                 -webkit-background-clip: text;
             }
         }
-        .l5 a{
+
+        .l5 a {
             color: rgba(255, 0, 0, 0.711);
             font-weight: bold;
         }
-        .l5 a:hover{
+
+        .l5 a:hover {
             font-size: 20px;
-        
+
         }
 
-
+        #group {
+            height: calc(5vw + 5vh);
+            width: calc(5vw + 5vh);
+            border-radius: 50% 50%;
+            background: linear-gradient(35deg, blue, white);
+            font-family: cursive;
+            font-size: calc(1vh + 1vw);
+            padding-top: 1vh;
+            margin: auto;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -313,51 +291,43 @@
 
 
     <p class="l1">Welcome to Fun and Fun </p>
-    <h2>your ultimate destination for all things exciting and engaging!</h2> <p class="l2"> We are a
-    dynamic online platform that brings together a wide range of activities, including games, events, sports, coding
-    tests, riddles, and more, within the vibrant community of our college.</p>
-
-    <br><p class="l3"> At Fun and Fun, we believe that life is meant to be filled with laughter, joy, and memorable experiences.
-    Our mission is to create a space where students can come together, unleash their creativity, and immerse themselves
-    in a world of fun-filled opportunities. Whether you're a gaming enthusiast, a sports lover, a coding wizard, or
-    simply someone seeking thrilling challenges, we have something for everyone.</p>
-
-    <br><p class="l4"> Our team at Fun and Fun is passionate about curating a diverse array of activities that cater to different
-    interests and skill levels. We strive to foster a sense of camaraderie and healthy competition among participants,
-    encouraging them to push their boundaries, discover new talents, and form lasting connections.
-
-    What sets Fun and Fun apart is our commitment to inclusivity and openness. We firmly believe that anybody can be
-    part of this incredible journey. Whether you're a student, faculty member, or even an outsider looking to engage
-    with our community, we welcome you with open arms. </p><br>
-    <h3>Be a part of Fun and Fun!</h3> <p class="l5">We encourage everyone to share their ideas, suggestions, and talents, as we
-    firmly believe that collaboration and diversity of thought lead to the most remarkable outcomes.
-
-    Join us at Fun and Fun, and unlock a world of endless possibilities. Participate in thrilling gaming tournaments,
-    attend exciting events, test your coding skills, solve mind-boggling riddles, and so much more. Together, let's
-    create memories, forge new friendships, and make each moment a delightful adventure.
-
-    Contact us today to be part of the Fun and Fun community. We look forward to sharing laughter, excitement, and
-    unforgettable experiences with you! <br> <a href="signin.html">Join</a></p>
+    <h2>your ultimate destination for all things exciting and engaging!</h2>
+    <p class="l2"> We are a
+        dynamic online platform that brings together a wide range of activities, including games, events, sports, coding
+        tests, riddles, and more, within the vibrant community of our college.</p>
 
     <br>
-    <div id="back">
-        <!-- copy this aut1 for more cards  -->
-        <div id="aut1">
-            <div class="imge"><img src="fresh1.jpg" alt=""></div>
-            <div class="info">
-                <br>
-                Pradeep K H <br>
-                V.T.U Belagavi
-            </div>
-            <div class="cont">
-                <a href="https://www.linkedin.com/in/pradeep-kh-30970b24a" target="_blank"><img src="linklogo.png" alt=""></a>
-                <a href="https://instagram.com/pradeep_7947?igshid=ZGUzMzM3NWJiOQ==" target="_google"><img src="instalogo.png" alt=""></a>
-                <a href="https://twitter.com/Pradeepkh312?t=GzfTpSSBOv8jCSy1yJhdiA&s=09" target="_blank"><img src="twitlogo.png" alt=""></a>
-                <a href="mailto: pradeepkh312@gmail.com" target="_blank"><img src="maillogo.png" alt=""></a>
-            </div>
-        </div>
-        <br>
-    </div>
+    <p class="l3"> At Fun and Fun, we believe that life is meant to be filled with laughter, joy, and memorable
+        experiences.
+        Our mission is to create a space where students can come together, unleash their creativity, and immerse
+        themselves
+        in a world of fun-filled opportunities. Whether you're a gaming enthusiast, a sports lover, a coding wizard, or
+        simply someone seeking thrilling challenges, we have something for everyone.</p>
+
+    <br>
+    <p class="l4"> Our team at Fun and Fun is passionate about curating a diverse array of activities that cater to
+        different
+        interests and skill levels. We strive to foster a sense of camaraderie and healthy competition among
+        participants,
+        encouraging them to push their boundaries, discover new talents, and form lasting connections.
+
+        What sets Fun and Fun apart is our commitment to inclusivity and openness. We firmly believe that anybody can be
+        part of this incredible journey. Whether you're a student, faculty member, or even an outsider looking to engage
+        with our community, we welcome you with open arms. </p><br>
+    <h3>Be a part of Fun and Fun!</h3>
+    <p class="l5">We encourage everyone to share their ideas, suggestions, and talents, as we
+        firmly believe that collaboration and diversity of thought lead to the most remarkable outcomes.
+
+        Join us at Fun and Fun, and unlock a world of endless possibilities. Participate in thrilling gaming
+        tournaments,
+        attend exciting events, test your coding skills, solve mind-boggling riddles, and so much more. Together, let's
+        create memories, forge new friendships, and make each moment a delightful adventure.
+
+        Contact us today to be part of the Fun and Fun community. We look forward to sharing laughter, excitement, and
+        unforgettable experiences with you! <br> <a href="signin.html">Join</a></p>
+
+    <br>
+    <div id="group" onclick="group()">Meet <br> my <br> team</div>
     <script>
         ani = () => {
             let img = document.getElementById('img');
@@ -371,6 +341,11 @@
 
             }
         }
+
+        group = () => {
+            window.open("dev.html");
+        }
+
 
         // bri = () => {
         //     let sun = document.getElementById("sun");
