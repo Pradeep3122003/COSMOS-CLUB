@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <style>
-        body {
-            background-color: rgb(0, 0, 0);
+           body {
+            background: linear-gradient(270deg,#5e377e,#121c33,#000000);
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+
         }
 
         div {
@@ -28,7 +34,7 @@
             width: 100%;
             height: calc(10vh + 10vw);
             display: block;
-            background-color: rgb(0, 0, 107);
+            background-color: rgb(0, 0, 0);
             align-items: center;
             position: relative;
         }
@@ -47,6 +53,8 @@
             height: calc(6vw + 6vh);
             width: calc(6vh + 6vw);
             position: relative;
+            border-radius: 12px;
+            border: 1px solid white;
             rotate: odeg;
             animation: imgrotate 1s ease 1;
         }
@@ -93,6 +101,35 @@ nav li {
             color: white;
             opacity: 0.2;
         }
+
+        .eve1 {
+            height:30vh;
+            width: 80vw ;
+            border-radius: 12px;
+            background:linear-gradient(20deg,rgb(111, 203, 226),rgb(208, 231, 138));
+            margin:2vh auto;
+            display: flex;
+        }
+
+        .eve1 img {
+            height: 25vh;
+            width: 25vw;
+            margin-left: 10px;
+            border-radius: 12px;
+        }
+
+        .econ {
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-size: calc(1.3vh + 1.3vw
+            );
+        }
+
+        .eb{
+            font-size: calc(1.2vh + 1.2vw);
+            padding: calc(1vh + 1vw);
+        }
       
     </style>
 </head>
@@ -101,7 +138,7 @@ nav li {
     <!-- nav code starts  -->
     <nav>
         <ul>
-            <li onclick="ani()"><img id="img" src="logo1.png" alt="F"></li>
+            <li onclick="ani()"><img id="img" src="LOGo.png" alt="F"></li>
             <li><a href="index.html" class="con">Home</a></li>
             <li><a href="events.html" class="con">Events</a></li>
             <li><a href="about.html" class="con">About us</a></li>
@@ -112,7 +149,10 @@ nav li {
     <!-- nav code ends  -->
     
    <div class="alert">No active events</div>
-    
+   <!-- <div class="eve1"><img src="chess1.png" alt="cube">
+    <div class="econ">CHESS MASTER<div class="eb">Open chess competition for all B.Tech students. <br>Register here using your userID. <br><a href="#">Register</a><br>Registration closes in <div id="ends"></div> </div><div></div> </div>
+</div>
+     -->
     <script>
         // ................................................ 
         // ................................................ 
@@ -127,7 +167,18 @@ nav li {
                 img.style.scale = '1';
             }
         }
+        
+        function time(){
+            var today = new Date().getDate();
+            var last=new Date('June 17, 2023 00:00:00').getDate();
+            var now = today.toLocaleString();
+        
+        document.getElementById("ends").innerHTML=last-now + " days";
+        let end=document.getElementById("ends");
+        end.style.color="red"
+        }
 
+        setInterval(time,1000);
         
 
     </script>
