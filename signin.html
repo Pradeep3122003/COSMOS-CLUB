@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VTU fun and activity zone">
+    <meta name="description" content="COSMOS CLUB">
     <meta name="keywords" content="vtu, vtu activities, vtu btech, btech">
     <meta name="robots" content="INDEX, FOLLOW">
-    <title>Game Entry</title>
+    <title>Register</title>
 
     <script src="front.js"></script>
 
@@ -19,7 +19,7 @@
             background-image: url("death2.png");
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 100vw 100dvh;
+            background-size: cover;
             padding-top: 0px;
             margin: auto;
             display: flex;
@@ -123,24 +123,24 @@
         </div>
         <div class="inp">
             <label for="mob">Mobile No:</label> <br>
-            <input type="var" name="num" id="mob" minlength="10" maxlength="10" required>
+            <input type="number" name="num" id="mob" minlength="10" maxlength="10" required>
         </div>
         <div class="inp">
             <label for="mail">Email ID</label> <br>
             <input type="email" name="email" id="mail" required>
         </div>
         <div class="inp">
-            <input type="submit" value="submit" id="sub">
+            <a href = "about.html" ><input type="submit" value="submit" id="sub"></a>
             <input type="reset" value="Reset" id="res">
         </div>
     </form>
-    <script>
+<script>
 a=document.getElementById("sub");
 b=document.getElementById("mob");
 
 a.onclick=function (){
-     alert("Thank you for joining us!\nWe will send a userID to your email address, by which you can join any events.");
-    if (b.value > 1000000000){
+    alert("Thank you for joining us!\nWe will send a userID to your email address, by which you can join any events.")
+    if (b.value > 0){
         window.open("about.html");
     }
 }
