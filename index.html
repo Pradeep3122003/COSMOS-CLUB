@@ -11,10 +11,10 @@
     <title>COSMOS CLUB</title>
     <style>
         body {
-            background: linear-gradient(270deg,#5e377e,#1d3263,#000000);
+            background: linear-gradient(270deg,#5e377e,#1d3263,#37487c);
             background-size: cover;
             width: 100vw;
-            height: 100vh;
+            height: auto;
             background-position: center;
             background-repeat: no-repeat;
 
@@ -40,7 +40,7 @@
             background-color: rgb(0, 0, 0);
             align-items: center;
             position: relative;
-            margin: ;
+            
         }
 
         nav li {
@@ -118,6 +118,21 @@ nav {
 
 /* nav style ends here  */
 
+.write{
+    margin: auto;
+    width: calc(10vh + 10vw);
+    
+}
+
+.write img{
+    margin: auto;
+    width: calc(10vh + 10vw);
+    height: calc(10vh + 10vw);
+    border: 2px solid black;
+    border-radius: 30%;
+}
+
+
 .join{
     margin:5vh auto;
     text-align: center;
@@ -152,6 +167,7 @@ nav {
         
     </nav>
     <div class="fun">Alone we can do so little; together we can do so much</div>
+    <div class="write"><img src="helen.jpg" alt="HELEN KELLER" onclick="writer()"></div>
     <div class="join"><a href="signin.html">JOIN</a></div>
     <script>
         ani = () => {
@@ -170,7 +186,10 @@ nav {
             alert("Are you willing to create a new logo for COSMOS CLUB?\nThen be ready logo competition is coming soon!!!")
             window.open("LOGo.png");
         }
-
+        
+        writer = () =>{
+            window.open("https://en.wikipedia.org/wiki/Helen_Keller")
+        }
 
     </script>
 </body>
